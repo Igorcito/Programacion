@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author IGOR BOULLOSA GARCIA
- * COMPARAR 3 NÚMEROS Y DECIR CUÁL ES EL MAYOR Y CUÁL ES EL MENOR.
+ * COMPARAR 3 NÚMEROS Y DECIR CUÁL ES EL MAYOR, MEDIO Y CUÁL ES EL MENOR.
  */
 public class Ejercicio12 {
 
