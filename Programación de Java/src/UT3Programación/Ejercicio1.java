@@ -5,7 +5,7 @@ package UT3Programación;
 
 /**
  * @author IGOR
- * Tabla de multiplicar del número 5.
+ * Tabla de multiplicar del número 5. // Hola //
  *
  */
 public class Ejercicio1 {
