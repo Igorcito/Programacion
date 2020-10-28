@@ -24,37 +24,40 @@ public class Semanal3 {
 		int campos;
 		
 		do {
-				System.out.println("Introduce los m2 que tiene tu superficie o pulsa 0 para salir:");
-				superficie = sc.nextInt();
-				if (superficie != 0) {
-					
+			System.out.println("Introduce los m2 que tiene tu superficie o pulsa 0 para salir:");
+			superficie = sc.nextInt();
+			
+			if (superficie != 0) {
+				
+				do {
 					System.out.println("Cuántos campos de fútbol crees que son?:");
 					campos = sc.nextInt();
-					if (campos != 0) {
-										float mediaCampo = superficie / campos;
 					
-										if (mediaCampo >= 4050 && mediaCampo <= 10800)
-										{
-											System.out.println("SI");
-											System.out.println("");
-										}
-										else 
-										{
-											System.out.println("NO");
-											System.out.println("");
-										}
-									 }
-					else
-					{
-						System.out.println("No se puede dividir por 0.");
+					if (campos == 0) {
+						System.out.print("No se puede dividir por 0. ");
+					}
+					
+				} while (campos == 0);
+				
+				if (campos != 0) {
+					float mediaCampo = superficie / campos;
+			
+					if (mediaCampo >= 4050 && mediaCampo <= 10800) {
+						System.out.println("SI");
+						System.out.println("");
+					} else {
+						System.out.println("NO");
 						System.out.println("");
 					}
-					}
-				else {
-					System.out.println("");
-					System.out.println("Adios.");
+					
 				}
-		}while(superficie != 0);	
+				
+			} else {
+				System.out.println("");
+				System.out.println("Adios.");
+			}
+			
+		} while (superficie != 0);	
 		
 		sc.close();
 	}
