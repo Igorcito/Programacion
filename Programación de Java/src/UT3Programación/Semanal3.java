@@ -23,53 +23,39 @@ public class Semanal3 {
 		int superficie;
 		int campos;
 		
+		do {
+				System.out.println("Introduce los m2 que tiene tu superficie o pulsa 0 para salir:");
+				superficie = sc.nextInt();
+				if (superficie != 0) {
+					
+					System.out.println("Cuántos campos de fútbol crees que son?:");
+					campos = sc.nextInt();
+					if (campos != 0) {
+										float mediaCampo = superficie / campos;
+					
+										if (mediaCampo >= 4050 && mediaCampo <= 10800)
+										{
+											System.out.println("SI");
+											System.out.println("");
+										}
+										else 
+										{
+											System.out.println("NO");
+											System.out.println("");
+										}
+									 }
+					else
+					{
+						System.out.println("No se puede dividir por 0.");
+						System.out.println("");
+					}
+					}
+				else {
+					System.out.println("");
+					System.out.println("Adios.");
+				}
+		}while(superficie != 0);	
 		
-		while (true)
-		{
-			System.out.println("Cuantos m2 tiene tu superficie?:");
-			superficie = sc.nextInt();
-			
-			if (superficie == 0)
-			{
-				break;
-			}
-			System.out.println("Cuánto campos de futbos crees que son?:");
-			campos = sc.nextInt();
-			
-			float mediaCampo = superficie / campos;
-			
-			if (mediaCampo >= 4050 && mediaCampo <= 10800) {
-				System.out.println("SI");
-			} else {
-				System.out.println("NO");
-			}
-
-			System.out.println("");
-		}
-		
-		System.out.println("Adios.");
 		sc.close();
 	}
 }
-		/**
-		do
-		{
-			System.out.println("Cuantos m2 tiene tu superficie?:");
-			superficie = sc.nextInt();
-			System.out.println("Cuánto campos de futbos crees que son?:");
-			campos = sc.nextInt();
-			
-			float mediaCampo = superficie / campos;
-			
-			if (mediaCampo >= 4050 && mediaCampo <= 10800) {
-				System.out.println("SI");
-			} else {
-				System.out.println("NO");
-			}
-		
-		}
-		while(superficie != 0);
-		
-		System.out.println("Adios.");
-		
-		sc.close(); **/
