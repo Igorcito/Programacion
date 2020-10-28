@@ -17,11 +17,9 @@ public class Ejercicio12 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
-		
 		//INTRODUCIMOS LAS VARIABLES DE LOS 3 NÚMEROS:
 		Scanner numero=new Scanner(System.in);
-		int a,b,c,Aux;
+		int a,b,c,aux;
 
 		//PREGUNTAMOS LOS 3 NÚMEROS:
 		System.out.println("Introduce 3 numeros y los ordenare de mayor a menor:");
@@ -36,6 +34,6 @@ public class Ejercicio12 {
 		if(a>=b && a>=c) {	System.out.println("El mayor numero es:"+a);
 		}else if(b>=a && b>=c) { System.out.println("El mayor numero es:"+b);	
 		}
-
+		numero.close();
 	}
 }

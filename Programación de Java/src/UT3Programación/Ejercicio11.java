@@ -32,7 +32,7 @@ public class Ejercicio11 {
 			{
 				System.out.println("El importe total de tu compra es de: " +importe);
 	        }
-
+		sc.close();
 	}
 
 }
