@@ -42,7 +42,7 @@ public class Semanal3 {
 				if (campos != 0) {
 					float mediaCampo = superficie / campos;
 			
-					if (mediaCampo >= 4050 && mediaCampo <= 10800) {
+					if (mediaCampo >= 4060 && mediaCampo <= 10850) {
 						System.out.println("SI");
 						System.out.println("");
 					} else {
